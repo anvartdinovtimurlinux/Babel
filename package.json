@@ -2,9 +2,10 @@
   "name": "defender-game",
   "version": "1.0.0",
   "description": "Browser based game",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/anvartdinovtimurlinux/babel/issues"
   },
-  "homepage": "https://github.com/anvartdinovtimurlinux/babel#readme"
+  "homepage": "https://github.com/anvartdinovtimurlinux/babel#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5"
+  }
 }
